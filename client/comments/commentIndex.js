@@ -1,10 +1,10 @@
-Template.commentIndex.helpers({
-  comments: function () {
-    return Comments.find(
-      {},
-      {
-        sort: { timestamp: -1 }
-      }
-    );
-  }
-});
+// Template.commentIndex.helpers({
+//   comments: function () {
+//     return Comments.find(
+//       { topicId: this.topicId },
+//       {
+//         sort: { timestamp: -1 }
+//       }
+//     );
+//   }
+// });
