@@ -1,9 +1,7 @@
 <template name="topicIndex">
-  <ul>
   {{#each topics}}
-    <li>
-      <h1><a href="/{{_id}}">{{name}}</a></h1>
-    </li>
+      <div class="jumbotron">
+        <h1><a href="/{{_id}}">{{name}}</a></h1>
+      </div>
   {{/each}}
-  </ul>
 </template>
