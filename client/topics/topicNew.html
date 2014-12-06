@@ -1,2 +1,10 @@
 <template name="topicNew">
+  {{#autoForm collection="Topics" id="insertTopicForm" type="insert"}}
+  <fieldset>
+    <legend>Post a Topic!</legend>
+    {{> afQuickField name='name'}}
+    {{> afQuickField name='url'}}
+  </fieldset>
+  <button type="submit" class="btn btn-primary">Post</button>
+  {{/autoForm}}
 </template>
