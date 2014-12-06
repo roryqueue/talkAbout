@@ -2,7 +2,6 @@
   <div class="jumbotron">
     <h1>{{name}}</h1>
   </div>
-  <img src="{{url}}" alt="Image not found">
   <form id="commentForm">
     <input type="textarea" name="text" placeholder="talk some shit">
     <br>
@@ -11,8 +10,9 @@
   <table>
   {{#each comments}}
     <tr>
-    {{text}}
+    <p>{{poster}}: {{text}}</p>
     </tr>
   {{/each}}
   </table>
+  <img src="{{url}}" alt="Image not found">
 </template>

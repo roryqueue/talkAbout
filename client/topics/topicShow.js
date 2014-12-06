@@ -17,6 +17,7 @@ Template.topicShow.events({
     Comments.insert({
       text: text,
       topicId: this._id,
+      poster: Meteor.user().emails[0].address,
       timestamp: new Date()
     });
 
