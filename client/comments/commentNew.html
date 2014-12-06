@@ -1,9 +1,7 @@
 <template name="commentNew">
-  {{#autoForm collection="Comments" id="insertCommentForm" type="insert"}}
-  <fieldset>
-    <legend>Post a Comment!</legend>
-    {{> afQuickField name='text'}}
-  </fieldset>
-  <button type="submit" class="btn btn-primary">Post</button>
-  {{/autoForm}}
+  <form id="commentForm">
+    <input type="textarea" name="text" placeholder="talk some shit">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
 </template>
