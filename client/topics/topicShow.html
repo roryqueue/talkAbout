@@ -8,9 +8,8 @@
     <br>
     <input type="submit" value="Submit">
   </form>
-  <ul>
-    {{#each comments}}
-    <li>{{text}}</li>
-    {{/each}}
-  </ul>
+  {{#each comments}}
+    {{text}}
+    <br>
+  {{/each}}
 </template>
